@@ -103,14 +103,14 @@ app.post('/group', function (req, res, next) {
 })
 
 
-app.use(function handleError(err, req, res, next) {
-  if (err instanceof Error) {
-    res.status(400)
-    return res.send(err.message || err)
-  }
-  debug('handleError::', 'Should not log here')
-  return res.send(err)
-})
+//app.use(function handleError(err, req, res, next) {
+//  console.log('ERROR', err)
+//  if (err) {
+//    return res.send(err.message || err)
+//  }
+//  debug('handleError::', 'Should not log here')
+//  //return res.send(err)
+//})
 
 app.start = function start(pre, logger) {
   return new Promise(function (resolve, reject) {
