@@ -7,7 +7,7 @@ var Analytics = require('analytics-node')
 var analytics = new Analytics('i6aoC3CdUjS4BvSOvmJQguLBAlvzt6kG')
 
 var app = express()
-var PORT = process.argv.PORT || 4001
+var PORT = process.argv.PORT || 5000
 
 app.use(cors())
 app.use(bodyParser.urlencoded({

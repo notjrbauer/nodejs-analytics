@@ -6,10 +6,10 @@ WORKDIR /app
 RUN npm install
 
 # ENV vars
-ENV PORT=4001
+ENV PORT=5000
 ENV DEBUG=*
 
-EXPOSE 4001
+EXPOSE 5000
 #ENTRYPOINT ["node"]
 #CMD ["index.js"]
 
